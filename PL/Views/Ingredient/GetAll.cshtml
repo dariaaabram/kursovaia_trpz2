@@ -1,0 +1,29 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<body>
+    <div>
+        <h3>Ингридиенты</h3>
+        <form>
+            </form>
+            <table>
+                <tr>
+                    <td width="200"><p>Название</p></td>                
+                    <td><p>ID</p></td>
+                </tr>
+                @foreach (var b in ViewBag.Ingredients)
+                {
+
+            <tr>
+                <td width="200"><p>@b.Name</p></td>
+                <td width="200"><p>@b.Id</p></td>
+                <td width="100"><p><a href="/Ingredient/Delete/@b.Id">Удалить</a></p></td>
+                <td width="100"><p><a href="/Ingredient/Edit/@b.Id">Изменить</a></p></td>
+                <td width="100"><p><a href="/Ingredient/GetById/@b.Id">Подробнее</a></p></td>
+            </tr>
+                }
+            </table>
+            <p><a href="/Ingredient/Add/">Добавить</a></p>
+            <p><a href="/Ingredient/GetByWord/">Поиск</a></p>
+</div>
+</body>

@@ -1,0 +1,48 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Dish.Name</title>
+</head>
+<body>
+    <div>
+        <h3>@ViewBag.Dish.Name</h3>
+        <table>
+            <tr>
+                <td width="200"><p>Название</p></td>
+                <td width="50"><p>Цена (грн)</p></td>
+                <td width="50"><p>Вес (кг)</p></td>
+                <td width="50"><p>Время приготовления (часы)</p></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td width="200"><p>@ViewBag.Dish.Name</p></td>
+                <td width="50"><p>@ViewBag.Dish.Price</p></td>
+                <td width="50"><p>@ViewBag.Dish.Weight</p></td>
+                <td width="50"><p>@ViewBag.Dish.Time</p></td>
+                <td >
+
+                <td>
+
+
+            </tr>
+        </table>
+            <h4>Ингридиенты</h4>
+            <ul>
+
+                @foreach (var c in ViewBag.Dish.Ingredients)
+                {
+                <li> @c.Name</li>
+
+                    }
+
+
+</ul>
+    </div>
+</body>
+</html>

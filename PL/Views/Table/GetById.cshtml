@@ -1,0 +1,31 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Столики по Id</title>
+</head>
+<body>
+    <div>
+        <h3>Столики по Id</h3>
+            <table>
+                <tr>
+                    <td width="50"><p>Номер</p></td>
+                    <td width="50"><p>Количество мест</p></td>
+                    <td></td>
+                </tr>
+               
+                    <tr>
+                        <td width="50"><p>@ViewBag.Table.Id</p></td>
+                        <td width="50"><p>@ViewBag.Table.PeopleAmount</p></td>
+                    </tr>
+                
+            </table>
+       
+    </div>
+</body>
+</html>

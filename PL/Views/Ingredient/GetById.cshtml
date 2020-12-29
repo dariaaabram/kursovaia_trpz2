@@ -1,0 +1,30 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Информация об ингредиенте</title>
+</head>
+<body>
+    <div>
+        <h3>@ViewBag.Ingredient.Name</h3>
+        <table>
+            <tr>
+                <td width="200"><p>Название</p></td>
+                <td></td>
+            </tr>
+
+            <tr>
+                <td width="200"><p>@ViewBag.Ingredient.Name</p></td>
+            </tr>
+
+        </table>
+        
+
+    </div>
+</body>
+</html>

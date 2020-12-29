@@ -1,0 +1,25 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Добавление стола</title>
+</head>
+<body>
+    <div>
+        <h3>Параметры добавлемого стола</h3>
+        <form method="post" action="">
+            <table>
+                <tr>
+                    <td><p>Введите количество посадочных мест </p></td>
+                    <td><input type="number" min="1" max="10" name="PeopleAmount" /> </td>
+                </tr>
+                <tr><td><input type="submit" value="Отправить" /> </td><td></td></tr>
+            </table>
+        </form>
+    </div>
+</body>
+</html>

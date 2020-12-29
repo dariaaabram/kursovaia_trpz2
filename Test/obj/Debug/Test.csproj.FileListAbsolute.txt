@@ -1,0 +1,15 @@
+C:\Users\User\Desktop\Restaurant\Test\obj\Debug\Test.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\Restaurant\Test\bin\Debug\Test.exe.config
+C:\Users\User\Desktop\Restaurant\Test\bin\Debug\Test.exe
+C:\Users\User\Desktop\Restaurant\Test\bin\Debug\Test.pdb
+C:\Users\User\Desktop\Restaurant\Test\bin\Debug\DAL.dll
+C:\Users\User\Desktop\Restaurant\Test\bin\Debug\EntityFramework.dll
+C:\Users\User\Desktop\Restaurant\Test\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\User\Desktop\Restaurant\Test\bin\Debug\DAL.pdb
+C:\Users\User\Desktop\Restaurant\Test\bin\Debug\DAL.dll.config
+C:\Users\User\Desktop\Restaurant\Test\bin\Debug\EntityFramework.xml
+C:\Users\User\Desktop\Restaurant\Test\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\User\Desktop\Restaurant\Test\obj\Debug\Test.csprojAssemblyReference.cache
+C:\Users\User\Desktop\Restaurant\Test\obj\Debug\Test.csproj.CopyComplete
+C:\Users\User\Desktop\Restaurant\Test\obj\Debug\Test.exe
+C:\Users\User\Desktop\Restaurant\Test\obj\Debug\Test.pdb

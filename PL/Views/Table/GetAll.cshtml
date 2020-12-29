@@ -1,0 +1,24 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<body>
+    <div>
+        <h3>Столики</h3>
+        <table>
+            <tr>
+                <td width="50"><p>Номер</p></td>
+                <td></td>
+            </tr>
+            @foreach (var b in ViewBag.Tables)
+            {
+            <tr>
+                <td width="50"><p>@b.Id</p></td>
+                <td width="100"><p><a href="/Table/Delete/@b.Id">Удалить</a></p></td>
+                <td width="100"><p><a href="/Table/Edit/@b.Id">Изменить</a></p></td>
+                <td width="100"><p><a href="/Table/GetById/@b.Id">Подробнее</a></p></td>
+            </tr>
+            }
+        </table>
+        <p><a href="/Table/Add/">Добавить</a></p>
+    </div>
+</body>

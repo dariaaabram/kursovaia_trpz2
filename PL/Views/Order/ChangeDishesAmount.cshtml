@@ -1,0 +1,29 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Изменить количество блюд в заказе</title>
+</head>
+<body>
+    <div>
+        <form method="post" action="">
+            <input type="hidden" value="@ViewBag.Id" name="Id" />
+            <table>
+                <tr>
+                    <td><p>Введите Id блюда</p></td>
+                    <td><input type="number" min="1" name="childId" /> </td>
+                </tr>
+                <tr>
+                    <td><p>Введите количество блюд</p></td>
+                    <td><input type="number" min="0" name="amount" /> </td>
+                </tr>
+                <tr><td><input type="submit" value="Отправить" /> </td><td></td></tr>
+            </table>
+        </form>
+    </div>
+</body>
+</html>

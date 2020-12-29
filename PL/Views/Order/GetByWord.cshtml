@@ -1,0 +1,52 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<body>
+    <div>
+        <h3>заказы</h3>
+        <br />
+        <h3>@ViewBag.Word</h3>
+        <table>
+            <tr>
+                <td><p>Название</p></td>
+               
+                <td></td>
+            </tr>
+            @foreach (var b in ViewBag.Orders)
+            {
+                <tr>
+                    <td><p>@b.Name</p></td>
+                    
+                    <td>
+                        <table>
+
+                            @foreach (var c in b.Dishes)
+                            {
+                            <tr>
+                                <td> @c.Name
+                                </td>
+
+                                <td>
+                                    <table>
+
+                                        @foreach (var i in c.Ingredients)
+                                        {
+                                            <tr>
+                                                @i.Name
+                                            </tr>
+
+                                        }
+
+                                    </table>
+                                </td>
+                            </tr>
+                                    }
+                               
+                            </table>
+                    </td>
+                </tr>
+            }
+        </table>
+        <p><a href="/Ingredient/Add/">Добавить</a></p>
+    </div>
+</body>

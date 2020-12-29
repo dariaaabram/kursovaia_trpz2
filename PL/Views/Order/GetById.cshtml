@@ -1,0 +1,44 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Информация о заказе</title>
+</head>
+<body>
+    <div>
+        <table>
+            <tr>
+                <td width="200"><p>Название</p></td>
+                <td width="50"><p>Стоимость</p></td>
+                <td width="50"><p>Номер столика</p></td>
+
+                <td></td>
+            </tr>
+            <tr>
+                <td width="200"><p>@ViewBag.Order.Name</p></td>
+                <td width="50"><p>@ViewBag.Order.Price</p></td>
+                <td width="50"><p>@ViewBag.Order.TableId</p></td>
+
+            </tr>
+
+        </table>
+        <h3>Блюда</h3>
+        <ul>
+
+            @foreach (var c in ViewBag.Order.Dishes)
+            {
+                <li> @c.Name</li>
+
+            }
+
+
+        </ul>
+    </div>
+</body>
+</html>
+
