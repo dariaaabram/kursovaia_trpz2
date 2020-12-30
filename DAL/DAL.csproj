@@ -81,8 +81,11 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-    <None Include="ClassDiagram1.cd" />
+    <None Include="Entities\ClassDiagram1.cd" />
+    <None Include="Entity_Framework\DB.cd" />
+    <None Include="Interfaces\RepositoryInterfaces\Interfaces.cd" />
     <None Include="packages.config" />
+    <None Include="Repositories\Repositories.cd" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Migrations\202012291459435_second.resx">

@@ -70,7 +70,9 @@
   <ItemGroup />
   <ItemGroup>
     <None Include="BLLDiagram1.cd" />
+    <None Include="Interfaces\InterfacesBLL.cd" />
     <None Include="packages.config" />
+    <None Include="Services\Services.cd" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\DAL\DAL.csproj">
